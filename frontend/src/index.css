@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Keep my CSS variables for existing components */
+  --primary: #4F46E5;
+  --primary-hover: #4338CA;
+  --secondary: #6366F1;
+  --accent: #3b82f6;
+
+  --text-heading: #111827;
+  --text-body: #4B5563;
+  --text-light: #9CA3AF;
+
+  --bg-white: #FFFFFF;
+  --bg-gray: #F9FAFB;
+  --bg-light-blue: #EFF6FF;
+
+  --border-color: #E5E7EB;
+
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-full: 9999px;
+
+  /* Typography */
+  --font-family: 'Inter', sans-serif;
+  --font-heading: 'Outfit', sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-white text-body antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading text-heading font-bold;
+  }
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-6;
+}

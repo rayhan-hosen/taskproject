@@ -1,0 +1,66 @@
+.company-logos {
+    padding: 3rem 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.company-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.company-title {
+    font-size: 1rem;
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+.logos-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    opacity: 0.6;
+    transition: opacity var(--transition-normal);
+}
+
+.logos-row:hover {
+    opacity: 1;
+}
+
+.company-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    font-family: var(--font-heading);
+    color: var(--text-light);
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.company-logo:hover {
+    color: var(--primary);
+}
+
+/* Specific styles for some logos */
+.vodafone {
+    color: #E60000;
+}
+
+.intel {
+    color: #0071C5;
+}
+
+.tesla {
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .logos-row {
+        justify-content: center;
+    }
+}

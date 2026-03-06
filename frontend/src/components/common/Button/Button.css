@@ -1,0 +1,62 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    transition: var(--transition-fast);
+    cursor: pointer;
+    border-radius: var(--radius-full);
+}
+
+/* Primary Button */
+.btn-primary {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    box-shadow: 0 0 15px rgba(79, 70, 229, 0.3);
+}
+
+/* Secondary Button (Outline or Ghost) */
+.btn-secondary {
+    background-color: transparent;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.btn-secondary:hover {
+    background-color: var(--bg-light-blue);
+}
+
+/* Ghost Button */
+.btn-ghost {
+    background-color: transparent;
+    color: var(--text-heading);
+}
+
+.btn-ghost:hover {
+    color: var(--primary);
+    background-color: var(--bg-light-blue);
+}
+
+/* Sizes */
+.btn-sm {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+}
+
+.btn-md {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+}
+
+.btn-lg {
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+}
+
+.btn-full {
+    width: 100%;
+}
