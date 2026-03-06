@@ -32,7 +32,17 @@ QuickHire is a premium, high-performance job board platform designed to connect 
 
 Follow these steps to get the project running locally:
 
-### 1. Clone the repository
+### 1. Prerequisites
+- Node.js (v18+)
+- Backend server running (default: `http://localhost:5000`)
+
+### 1.2. Environment Setup
+Create a `.env` file in the `frontend` directory and add:
+```env
+VITE_API_URL=http://localhost:5000/api
+```
+
+### 1.3. Clone the repository
 ```bash
 git clone https://github.com/rayhan-hosen/project-task.git
 cd project-task/frontend
