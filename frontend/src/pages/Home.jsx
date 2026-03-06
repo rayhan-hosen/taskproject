@@ -6,7 +6,15 @@ import JobBanner from '../components/home/JobBanner/JobBanner';
 import FeaturedJobs from '../components/home/FeaturedJobs/FeaturedJobs';
 import LatestJobs from '../components/home/LatestJobs/LatestJobs';
 
+import { useJobs } from '../context/JobContext';
+
 const Home = () => {
+    const { fetchJobs } = useJobs();
+
+    React.useEffect(() => {
+        fetchJobs(true);
+    }, [fetchJobs]);
+
     return (
         <>
             <Hero />
