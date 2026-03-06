@@ -44,8 +44,8 @@ VITE_API_URL=http://localhost:5000/api
 
 ### 1.3. Clone the repository
 ```bash
-git clone https://github.com/rayhan-hosen/project-task.git
-cd project-task/frontend
+git clone https://github.com/rayhan-hosen/taskproject.git
+cd taskproject/frontend
 ```
 
 ### 2. Install dependencies
